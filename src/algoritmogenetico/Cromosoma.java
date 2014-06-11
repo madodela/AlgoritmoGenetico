@@ -20,6 +20,10 @@ public class Cromosoma {
         }
     }
 
+    public int getAptitud() {
+        return aptitud;
+    }
+
     public Cromosoma(int[] cromosoma) {
         this.cromosoma = cromosoma;
         for (int i = 0; i < this.TAMANIO; i++) {

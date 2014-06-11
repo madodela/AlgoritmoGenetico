@@ -12,10 +12,13 @@ public class Poblacion {
     }
 
     public void toStrings(int id) {
-        System.out.println("----   POBLACION " + id + "  ----");
+        int aptitudPoblacional = 0;
+        System.out.println("\n                   ----   POBLACION " + id + "  ----");
         for (int i = 0, len_p = this.poblacion.size(); i < len_p; i++) {
             Cromosoma crom = this.poblacion.get(i);
+            aptitudPoblacional += crom.getAptitud();
             System.out.println(crom.toString());
         }
+        System.out.println("                    Aptitud poblacional: " + aptitudPoblacional);
     }
 }
